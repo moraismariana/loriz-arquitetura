@@ -9,9 +9,14 @@
 @import "header";
 @import "footer";
 
-// Seções página inicial
+// Seções
+// Página inicial
 @import "inicio/introducao";
 @import "inicio/servicos";
 @import "inicio/depoimento";
 @import "inicio/projetos";
 @import "inicio/mapa";
+
+// Sobre
+@import "sobre/titulo";
+@import "sobre/info";

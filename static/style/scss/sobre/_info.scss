@@ -1,0 +1,48 @@
+.sobre-info {
+  @include container;
+  @include mbottom-1;
+  p {
+    @include text-1;
+    color: $c4;
+  }
+}
+
+.sobre-grid-1 {
+  grid-area: a;
+}
+.sobre-grid-2 {
+  grid-area: b;
+}
+.sobre-grid-3 {
+  grid-area: c;
+}
+.sobre-grid-4 {
+  grid-area: d;
+}
+
+.sobre-grid-1,
+.sobre-grid-4 {
+  background-color: $c1;
+  padding: 40px;
+  align-content: end;
+  p:nth-of-type(1) {
+    color: $w;
+    @include text-1;
+    @include mbottom-4;
+  }
+  p:nth-of-type(2) {
+    @include text-1;
+    color: $c3;
+  }
+}
+
+.sobre-grid {
+  @include container;
+  @include mbottom-1;
+  display: grid;
+  gap: 4px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "a b b"
+    "c c d";
+}

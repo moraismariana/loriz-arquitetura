@@ -1,0 +1,15 @@
+.pagina-titulo-bg {
+  color: white;
+  background-image: url("../../img/inicio/introducao.jpg");
+  background-size: cover;
+  @include mbottom-1;
+}
+
+.pagina-titulo {
+  @include container;
+  padding-top: $spacing-1;
+  padding-bottom: $spacing-1;
+  h1 {
+    @include title-1;
+  }
+}

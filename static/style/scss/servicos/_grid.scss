@@ -1,0 +1,47 @@
+.servicos-grid-1 {
+  grid-area: a;
+}
+.servicos-grid-2 {
+  grid-area: b;
+}
+.servicos-grid-3 {
+  grid-area: c;
+}
+.servicos-grid-4 {
+  grid-area: d;
+}
+.servicos-grid-5 {
+  grid-area: e;
+}
+.servicos-grid-6 {
+  grid-area: f;
+}
+
+.servicos-grid-1,
+.servicos-grid-4,
+.servicos-grid-5 {
+  background-color: $c1;
+  padding: 40px;
+  align-content: end;
+  h3 {
+    color: $w;
+    @include title-3;
+    @include mbottom-4;
+  }
+  p {
+    @include text-1;
+    color: $c3;
+  }
+}
+
+.servicos-grid {
+  @include container;
+  @include mbottom-1;
+  display: grid;
+  gap: 4px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "a b b"
+    "c c d"
+    "e f f";
+}

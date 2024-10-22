@@ -1,0 +1,17 @@
+// Reset / definições iniciais
+@import "colors";
+@import "functions";
+@import "mixins";
+@import "global";
+@import "typo";
+
+// Seções gerais
+@import "header";
+@import "footer";
+
+// Seções página inicial
+@import "inicio/introducao";
+@import "inicio/servicos";
+@import "inicio/depoimento";
+@import "inicio/projetos";
+@import "inicio/mapa";

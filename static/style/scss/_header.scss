@@ -1,0 +1,19 @@
+.header {
+  @include container;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    ul {
+      display: flex;
+      gap: 24px;
+      a {
+        text-transform: uppercase;
+        padding: 8px 0;
+      }
+    }
+  }
+}

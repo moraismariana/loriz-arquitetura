@@ -1,0 +1,33 @@
+.inicio-depoimento {
+  @include container;
+  @include mbottom-1;
+  h2 {
+    @include title-2;
+    @include container-2;
+    @include mbottom-2;
+  }
+  a {
+    color: $c4;
+    @include link-text($c3);
+    display: block;
+    max-width: fit-content;
+    margin-left: auto;
+  }
+  .inicio-depoimento-frase {
+    background-color: $w2;
+    @include mbottom-2;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    p:nth-of-type(1) {
+      color: $c3;
+      @include mbottom-4;
+      @include text-1;
+      @include container-2;
+    }
+    p:nth-of-type(2) {
+      @include text-1;
+      color: $c4;
+      @include container-2;
+    }
+  }
+}

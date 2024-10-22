@@ -1,0 +1,28 @@
+.inicio-projetos-bg {
+  background-image: url("../../img/inicio/projetos.jpg");
+  background-size: cover;
+  background-position: center;
+  @include mbottom-1;
+}
+
+.inicio-projetos {
+  @include container;
+  padding-top: $spacing-1;
+  padding-bottom: $spacing-1;
+  color: $w;
+  h2 {
+    @include title-2;
+    color: $w;
+    @include mbottom-3;
+    @include container-2;
+  }
+  p {
+    @include text-1;
+    @include mbottom-3;
+    @include container-2;
+  }
+  a {
+    @include link-text;
+    @include container-2;
+  }
+}

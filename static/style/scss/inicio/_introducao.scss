@@ -1,0 +1,26 @@
+.inicio-introducao-bg {
+  color: white;
+  background-image: url("../../img/inicio/introducao.jpg");
+  background-size: cover;
+  height: 100vh;
+  @include mbottom-1;
+}
+
+.inicio-introducao {
+  @include container;
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+  h1 {
+    @include title-1;
+    @include mbottom-3;
+  }
+  p {
+    @include text-1;
+    max-width: 60ch;
+    @include mbottom-3;
+  }
+  a {
+    @include link-text;
+  }
+}

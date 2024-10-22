@@ -1,0 +1,49 @@
+.mapa {
+  @include container;
+  @include mbottom-1;
+  position: relative;
+  .mapa-imagem {
+    @include container-2;
+  }
+  .mapa-before {
+    background-color: $w2;
+    padding: $spacing-3;
+    padding-right: 40px;
+    padding-left: 40px;
+    position: absolute;
+    margin-left: 60px;
+    bottom: 0;
+    left: 0;
+    p {
+      @include text-1;
+      color: $c4;
+    }
+    @include screen(notebook-s) {
+      margin-left: 40px;
+    }
+    @include screen(mobile) {
+      margin-left: 24px;
+    }
+  }
+  .mapa-after {
+    background-color: $w2;
+    padding: $spacing-3;
+    position: absolute;
+    margin-right: 60px;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 12px;
+    cursor: pointer;
+    p {
+      @include text-2;
+      color: $c4;
+    }
+    @include screen(notebook-s) {
+      margin-right: 40px;
+    }
+    @include screen(mobile) {
+      margin-right: 24px;
+    }
+  }
+}

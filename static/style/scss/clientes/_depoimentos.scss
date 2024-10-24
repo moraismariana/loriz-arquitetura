@@ -1,0 +1,22 @@
+.clientes-depoimentos {
+  @include container;
+  @include mbottom-1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-3;
+  .clientes-depoimentos-item {
+    background-color: $w2;
+    padding: $spacing-3;
+    padding-left: $spacing-3 + px-rem(16px);
+    padding-right: $spacing-3 + px-rem(16px);
+    p:nth-of-type(1) {
+      color: $c3;
+      @include mbottom-4;
+      @include text-1;
+    }
+    p:nth-of-type(2) {
+      @include text-1;
+      color: $c4;
+    }
+  }
+}

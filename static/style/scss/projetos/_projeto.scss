@@ -2,6 +2,9 @@
   background-color: $c1;
   color: $w;
   @include mbottom-2;
+  &.menu-mobile-ativo {
+    margin-bottom: 0;
+  }
 }
 
 .projeto-detalhes {

@@ -14,6 +14,56 @@
         text-transform: uppercase;
         padding: 8px 0;
       }
+      @include screen(tablet) {
+        display: none;
+      }
     }
+  }
+  .menu-mobile-icone {
+    display: none;
+    button {
+      border: none;
+      padding: 10px;
+      background: none;
+      cursor: pointer;
+    }
+  }
+  .menu-mobile-icone {
+    display: none;
+    @include screen(tablet) {
+      display: block;
+    }
+  }
+  &.menu-mobile-ativo {
+    width: 100vw;
+    z-index: 2;
+    position: fixed;
+  }
+}
+
+// menu mobile
+.menu-mobile {
+  display: none;
+  background-color: $c1;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  @include container;
+  ul {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  a {
+    display: block;
+    @include title-3;
+    text-align: center;
+    padding: 10px;
+    color: $w;
+  }
+  &.menu-mobile-ativo {
+    display: block;
   }
 }

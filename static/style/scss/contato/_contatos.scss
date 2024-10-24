@@ -1,0 +1,27 @@
+.contato-contatos {
+  @include container;
+  @include mbottom-1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .contatos-mensagem {
+    @include container-2;
+    color: $c1;
+    display: flex;
+    gap: 12px;
+    @include link-text($c1);
+  }
+  .contatos-info {
+    @include container-2;
+    display: flex;
+    gap: $spacing-2;
+    color: $c4;
+    @include text-1;
+    ul {
+      li {
+        text-align: end;
+        max-width: 20ch;
+      }
+    }
+  }
+}

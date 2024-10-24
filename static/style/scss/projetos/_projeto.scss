@@ -1,0 +1,23 @@
+.header-2-bg {
+  background-color: $c1;
+  color: $w;
+  @include mbottom-2;
+}
+
+.projeto-detalhes {
+  @include container;
+  @include mbottom-2;
+  h2 {
+    @include title-2;
+    @include mbottom-2;
+    @include container-2;
+  }
+  img {
+    @include mbottom-2;
+  }
+  p {
+    @include text-1;
+    color: $c4;
+    @include container-2;
+  }
+}

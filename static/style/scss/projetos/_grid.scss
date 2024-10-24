@@ -1,0 +1,21 @@
+.projetos-grid {
+  @include container;
+  @include mbottom-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4px;
+  .projetos-grid-item {
+    position: relative;
+    h3 {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-color: $c1;
+      color: $w;
+      @include title-3;
+      padding: $spacing-3;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+}

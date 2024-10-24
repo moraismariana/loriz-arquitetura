@@ -53,14 +53,20 @@
   font-weight: 400;
   text-transform: uppercase;
   position: relative;
-  &:after {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  &::after {
     content: "";
     position: absolute;
     width: 100%;
     height: 2px;
     background-color: $color;
-    bottom: -4px;
+    bottom: 0px;
     left: 0;
+    transition: 0.3s;
+  }
+  &:hover::after {
+    width: 0%;
   }
   @include screen(notebook-s) {
     font-size: px-rem(20px);

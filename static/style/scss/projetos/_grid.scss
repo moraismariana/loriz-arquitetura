@@ -8,7 +8,8 @@
     position: relative;
     h3 {
       position: absolute;
-      left: 0;
+      left: -80px;
+      right: 80px;
       bottom: 0;
       background-color: $c1;
       color: $w;
@@ -16,6 +17,14 @@
       padding: $spacing-3;
       width: 100%;
       box-sizing: border-box;
+      opacity: 0;
+      transition: 0.5s;
+    }
+    // Animação Hover
+    &:hover h3 {
+      opacity: 1;
+      left: 0;
+      right: 0;
     }
   }
 }

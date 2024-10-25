@@ -21,7 +21,7 @@
 .servicos-grid-4,
 .servicos-grid-5 {
   background-color: $c1;
-  padding: 40px;
+  padding: 32px;
   align-content: end;
   h3 {
     color: $w;
@@ -31,6 +31,9 @@
   p {
     @include text-1;
     color: $c3;
+    @include screen(mobile) {
+      @include text-2;
+    }
   }
 }
 
@@ -44,4 +47,8 @@
     "a b b"
     "c c d"
     "e f f";
+  @include screen(tablet) {
+    grid-template-columns: 1fr;
+    grid-template-areas: "b" "a" "c" "d" "f" "e";
+  }
 }

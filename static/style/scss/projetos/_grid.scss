@@ -4,6 +4,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 4px;
+  @include screen(tablet) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include screen(mobile) {
+    grid-template-columns: 1fr;
+  }
   .projetos-grid-item {
     position: relative;
     h3 {
@@ -19,6 +25,15 @@
       box-sizing: border-box;
       opacity: 0;
       transition: 0.5s;
+      @include screen(tablet) {
+        opacity: 1;
+        left: 0;
+        right: 0;
+        padding: $spacing-3-2;
+      }
+      @include screen(mobile) {
+        padding: $spacing-3;
+      }
     }
     // Animação Hover
     &:hover h3 {

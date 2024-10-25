@@ -25,13 +25,18 @@
   background-color: $c1;
   padding: 40px;
   align-content: end;
+  @include text-1;
+  @include screen(tablet) {
+    padding: 32px;
+  }
+  @include screen(mobile) {
+    @include text-2;
+  }
   p:nth-of-type(1) {
     color: $w;
-    @include text-1;
     @include mbottom-4;
   }
   p:nth-of-type(2) {
-    @include text-1;
     color: $c3;
   }
 }
@@ -45,4 +50,8 @@
   grid-template-areas:
     "a b b"
     "c c d";
+  @include screen(tablet) {
+    grid-template-columns: 1fr;
+    grid-template-areas: "b" "a" "c" "d";
+  }
 }

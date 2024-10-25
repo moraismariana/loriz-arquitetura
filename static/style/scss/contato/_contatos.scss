@@ -4,23 +4,44 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include screen(tablet) {
+    flex-direction: column;
+    gap: $spacing-3;
+  }
   .contatos-mensagem {
-    @include container-2;
+    margin-left: 40px;
+    @include screen(tablet) {
+      margin-left: 0;
+    }
     color: $c1;
     display: flex;
     gap: 12px;
     @include link-text($c1);
+    white-space: nowrap;
   }
   .contatos-info {
-    @include container-2;
+    margin-right: 40px;
+    @include screen(tablet) {
+      margin-right: 0;
+    }
+
     display: flex;
+    align-items: center;
     gap: $spacing-2;
     color: $c4;
     @include text-1;
+    @include screen(tablet) {
+      // gap: $spacing-3;
+      // flex-direction: column;
+      justify-content: space-between;
+    }
     ul {
       li {
         text-align: end;
         max-width: 20ch;
+        @include screen(tablet) {
+          text-align: center;
+        }
       }
     }
   }

@@ -1,12 +1,15 @@
 // MENU RESPONSIVO
 
-let img = document.querySelector(".header nav a img");
+let logoHeader = document.querySelector(".header nav a img");
+let logoFooter = document.querySelector(".footer .footer-flex > img");
 function updateImageSrc() {
   const baseUrl = window.BASE_URL;
   if (window.innerWidth <= 1024) {
-    img.src = `${baseUrl}logo-min.svg`;
+    logoHeader.src = `${baseUrl}logo-min.svg`;
+    logoFooter.src = `${baseUrl}logo-min.svg`;
   } else {
-    img.src = `${baseUrl}logo.svg`;
+    logoHeader.src = `${baseUrl}logo.svg`;
+    logoFooter.src = `${baseUrl}logo.svg`;
   }
 }
 updateImageSrc();

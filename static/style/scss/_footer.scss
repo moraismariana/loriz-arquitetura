@@ -32,9 +32,27 @@
   justify-content: space-between;
   padding-top: $spacing-1;
   padding-bottom: $spacing-1;
+  @include screen(tablet) {
+    flex-direction: column;
+    gap: $spacing-2;
+    img {
+      max-width: fit-content;
+    }
+  }
+  @include screen(mobile) {
+    @include container-2;
+  }
   .footer-info {
     display: flex;
     gap: 48px;
+    @include screen(tablet) {
+      justify-content: space-around;
+      gap: 20px;
+    }
+    @include screen(mobile) {
+      flex-direction: column;
+      gap: $spacing-3;
+    }
     .footer-info-item {
       p {
         text-transform: uppercase;

@@ -39,6 +39,10 @@
 @mixin container-2 {
   margin-left: 40px;
   margin-right: 40px;
+  @include screen(mobile) {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
 }
 
 // ALIGN-DIV

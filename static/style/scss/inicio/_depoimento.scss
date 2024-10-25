@@ -5,6 +5,9 @@
     @include title-2;
     @include container-2;
     @include mbottom-2;
+    @include screen(tablet) {
+      text-align: center;
+    }
   }
   a {
     color: $c4;
@@ -12,6 +15,9 @@
     display: block;
     max-width: fit-content;
     margin-left: auto;
+    @include screen(tablet) {
+      margin-right: auto;
+    }
   }
   .inicio-depoimento-frase {
     background-color: $w2;

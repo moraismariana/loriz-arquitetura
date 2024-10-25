@@ -15,14 +15,27 @@
     color: $w;
     @include mbottom-3;
     @include container-2;
+    @include screen(tablet) {
+      text-align: center;
+    }
   }
   p {
     @include text-1;
     @include mbottom-3;
     @include container-2;
+    @include screen(tablet) {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
   a {
     @include link-text;
     @include container-2;
+    @include screen(tablet) {
+      display: block;
+      max-width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }

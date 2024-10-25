@@ -5,7 +5,8 @@
   font-weight: 400;
   text-transform: uppercase;
   @include screen(notebook-s) {
-    font-size: px-rem(36px);
+    font-size: px-rem(40px);
+    line-height: 1em;
   }
 }
 

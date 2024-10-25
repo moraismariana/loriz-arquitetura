@@ -39,6 +39,10 @@
 @mixin container-2 {
   margin-left: 40px;
   margin-right: 40px;
+  @include screen(tablet) {
+    margin-left: 36px;
+    margin-right: 36px;
+  }
   @include screen(mobile) {
     margin-left: 24px;
     margin-right: 24px;
@@ -66,7 +70,7 @@ $spacing-4: px-rem(12px);
 // primeira media-query (notebook-s)
 $spacing-1-2: px-rem(70px);
 $spacing-2-2: px-rem(40px);
-$spacing-3-2: px-rem(16px);
+$spacing-3-2: px-rem(20px);
 
 @mixin mbottom-1 {
   margin-bottom: $spacing-1;

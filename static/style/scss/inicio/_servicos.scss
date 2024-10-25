@@ -5,11 +5,17 @@
     @include title-2;
     @include mbottom-2;
     @include container-2;
+    @include screen(tablet) {
+      text-align: center;
+    }
   }
   .inicio-servicos-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 4px;
+    @include screen(tablet) {
+      grid-template-columns: 1fr;
+    }
     .inicio-servicos-item {
       position: relative;
       img {
@@ -42,6 +48,11 @@
 .inicio-servicos-item-texto {
   opacity: 0;
   transition: 0.5s;
+  @include screen(tablet) {
+    opacity: 1;
+    left: 0 !important;
+    right: 0 !important;
+  }
 }
 
 .inicio-servicos-item:hover {

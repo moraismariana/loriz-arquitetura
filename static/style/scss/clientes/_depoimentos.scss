@@ -9,14 +9,23 @@
     padding: $spacing-3;
     padding-left: $spacing-3 + px-rem(16px);
     padding-right: $spacing-3 + px-rem(16px);
+    @include screen(mobile) {
+      padding: $spacing-3;
+    }
     p:nth-of-type(1) {
       color: $c3;
       @include mbottom-4;
       @include text-1;
+      @include screen(mobile) {
+        @include text-2;
+      }
     }
     p:nth-of-type(2) {
       @include text-1;
       color: $c4;
+      @include screen(mobile) {
+        @include text-2;
+      }
     }
   }
 }

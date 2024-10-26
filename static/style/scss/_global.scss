@@ -48,3 +48,51 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+// EFEITO DE SCROLL
+// transição fade in
+.transition-element {
+  transform: translateX(-20px);
+  opacity: 0;
+  transition: 0.8s ease;
+}
+
+.transition-element--visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+// transição fade-in 2 (para elementos que estao no topo da pagina)
+.transition-element-topo {
+  animation-name: fade-in;
+  animation-duration: 0.8s;
+  opacity: 1;
+}
+
+// transição inicio
+.transition-inicio {
+  animation-name: fade-in-inicio;
+  animation-duration: 0.8s;
+}
+
+@keyframes fade-in {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-inicio {
+  0% {
+    transform: translate(-20px, -50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, -50%);
+    opacity: 1;
+  }
+}

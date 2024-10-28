@@ -16,10 +16,30 @@
 </head>
 
 <body>
-    <div class="pagina-titulo-bg">
-        <header class="header">
-            <nav>
-                <a href="../"><img src="../static/img/svg/logo.svg" alt="Loriz Arquitetura"></a>
+    <div id="clientes-content">
+        <div class="pagina-titulo-bg bg">
+            <header class="header">
+                <nav>
+                    <a href="../"><img src="../static/img/svg/logo.svg" alt="Loriz Arquitetura"></a>
+                    <ul>
+                        <li><a href="../">Início</a></li>
+                        <li><a href="../sobre/">Sobre</a></li>
+                        <li><a href="../servicos/">Serviços</a></li>
+                        <li><a href="../projetos/">Projetos</a></li>
+                        <li><a href="../clientes/">Clientes</a></li>
+                        <li><a href="../contato/">Contato</a></li>
+                    </ul>
+                    <div class="menu-mobile-icone">
+                        <button onclick="menuShow()">
+                            <img src="../static/img/svg/menu-icon.svg" alt="Menu Mobile">
+                        </button>
+                    </div>
+                </nav>
+                <script>
+                    window.BASE_URL = "../static/img/svg/";
+                </script>
+            </header>
+            <div class="menu-mobile">
                 <ul>
                     <li><a href="../">Início</a></li>
                     <li><a href="../sobre/">Sobre</a></li>
@@ -28,98 +48,81 @@
                     <li><a href="../clientes/">Clientes</a></li>
                     <li><a href="../contato/">Contato</a></li>
                 </ul>
-                <div class="menu-mobile-icone">
-                    <button onclick="menuShow()">
-                        <img src="../static/img/svg/menu-icon.svg" alt="Menu Mobile">
-                    </button>
-                </div>
-            </nav>
-            <script>
-                window.BASE_URL = "../static/img/svg/";
-            </script>
-        </header>
-        <div class="menu-mobile">
-            <ul>
-                <li><a href="../">Início</a></li>
-                <li><a href="../sobre/">Sobre</a></li>
-                <li><a href="../servicos/">Serviços</a></li>
-                <li><a href="../projetos/">Projetos</a></li>
-                <li><a href="../clientes/">Clientes</a></li>
-                <li><a href="../contato/">Contato</a></li>
-            </ul>
+            </div>
+            <article class="pagina-titulo transition-element">
+                <h1 class="text">Clientes</h1>
+            </article>
         </div>
-        <article class="pagina-titulo transition-element">
-            <h1>Clientes</h1>
-        </article>
-    </div>
 
-    <section class="clientes-depoimentos">
-        <div class="clientes-depoimentos-item transition-element">
-            <p>A Loriz conseguiu traduzir nossa essência em um projeto impecável. A estética e funcionalidade superaram todas as expectativas.</p>
-            <p>Ana Fonseca. Cliente residencial.</p>
-        </div>
-        <div class="clientes-depoimentos-item transition-element">
-            <p>A Loriz transformou o nosso espaço em um ambiente funcional e cheio de estilo. O processo foi transparente e colaborativo do início ao fim.</p>
-            <p>Carlos M. Cliente comercial.</p>
-        </div>
-        <div class="clientes-depoimentos-item transition-element">
-            <p>O projeto superou todas as expectativas. Cada detalhe do design de interiores foi pensado para refletir nossa personalidade.</p>
-            <p>Paula R. Cliente residencial.</p>
-        </div>
-        <div class="clientes-depoimentos-item transition-element">
-            <p>Desde a primeira reunião, percebemos o compromisso e a paixão da equipe Loriz. Hoje moramos na casa dos nossos sonhos!</p>
-            <p>Fernando e Letícia. Clientes residenciais.</p>
-        </div>
-        <div class="clientes-depoimentos-item transition-element">
-            <p>O projeto superou todas as expectativas. Cada detalhe do design de interiores foi pensado para refletir nossa personalidade.</p>
-            <p>Paula R. Cliente residencial.</p>
-        </div>
-        <div class="clientes-depoimentos-item transition-element">
-            <p>Desde a primeira reunião, percebemos o compromisso e a paixão da equipe Loriz. Hoje moramos na casa dos nossos sonhos!</p>
-            <p>Fernando e Letícia. Clientes residenciais.</p>
-        </div>
-    </section>
+        <section class="clientes-depoimentos">
+            <div class="clientes-depoimentos-item transition-element">
+                <p class="text">A Loriz conseguiu traduzir nossa essência em um projeto impecável. A estética e funcionalidade superaram todas as expectativas.</p>
+                <p class="text">Ana Fonseca. Cliente residencial.</p>
+            </div>
+            <div class="clientes-depoimentos-item transition-element">
+                <p class="text">A Loriz transformou o nosso espaço em um ambiente funcional e cheio de estilo. O processo foi transparente e colaborativo do início ao fim.</p>
+                <p class="text">Carlos M. Cliente comercial.</p>
+            </div>
+            <div class="clientes-depoimentos-item transition-element">
+                <p class="text">O projeto superou todas as expectativas. Cada detalhe do design de interiores foi pensado para refletir nossa personalidade.</p>
+                <p class="text">Paula R. Cliente residencial.</p>
+            </div>
+            <div class="clientes-depoimentos-item transition-element">
+                <p class="text">Desde a primeira reunião, percebemos o compromisso e a paixão da equipe Loriz. Hoje moramos na casa dos nossos sonhos!</p>
+                <p class="text">Fernando e Letícia. Clientes residenciais.</p>
+            </div>
+            <div class="clientes-depoimentos-item transition-element">
+                <p class="text">O projeto superou todas as expectativas. Cada detalhe do design de interiores foi pensado para refletir nossa personalidade.</p>
+                <p class="text">Paula R. Cliente residencial.</p>
+            </div>
+            <div class="clientes-depoimentos-item transition-element">
+                <p class="text">Desde a primeira reunião, percebemos o compromisso e a paixão da equipe Loriz. Hoje moramos na casa dos nossos sonhos!</p>
+                <p class="text">Fernando e Letícia. Clientes residenciais.</p>
+            </div>
+        </section>
 
-    <footer class="footer-bg">
-        <div class="footer">
-            <div class="footer-flex">
-                <img src="../static/img/svg/logo.svg" alt="Loriz Arquitetura">
-                <div class="footer-info">
-                    <div class="footer-info-item">
-                        <p>Ver mais</p>
-                        <ul>
-                            <li><a href="../">Início</a></li>
-                            <li><a href="../sobre/">Sobre</a></li>
-                            <li><a href="../servicos/">Serviços</a></li>
-                            <li><a href="../projetos/">Projetos</a></li>
-                            <li><a href="../contato/">Contato</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-info-item">
-                        <p>Acompanhe</p>
-                        <ul>
-                            <li><a href="">Instagram</a></li>
-                            <li><a href="">Facebook</a></li>
-                            <li><a href="">Whatsapp</a></li>
-                            <li><a href="">Linkedin</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-info-item">
-                        <p>Contato</p>
-                        <ul>
-                            <li>contato@loriz.com</li>
-                            <li>(31) 9 9999 9999</li>
-                            <li>Rua Fictícia, 39, Bairro Fictício, 00000-000</li>
-                        </ul>
+        <footer class="footer-bg">
+            <div class="footer">
+                <div class="footer-flex">
+                    <img src="../static/img/svg/logo.svg" alt="Loriz Arquitetura">
+                    <div class="footer-info">
+                        <div class="footer-info-item">
+                            <p>Ver mais</p>
+                            <ul>
+                                <li><a href="../">Início</a></li>
+                                <li><a href="../sobre/">Sobre</a></li>
+                                <li><a href="../servicos/">Serviços</a></li>
+                                <li><a href="../projetos/">Projetos</a></li>
+                                <li><a href="../contato/">Contato</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-info-item">
+                            <p>Acompanhe</p>
+                            <ul>
+                                <li><a href="">Instagram</a></li>
+                                <li><a href="">Facebook</a></li>
+                                <li><a href="">Whatsapp</a></li>
+                                <li><a href="">Linkedin</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-info-item">
+                            <p>Contato</p>
+                            <ul>
+                                <li>contato@loriz.com</li>
+                                <li>(31) 9 9999 9999</li>
+                                <li>Rua Fictícia, 39, Bairro Fictício, 00000-000</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-copy">
-            <p>Desenvolvido por Mariana Morais © 2024.</p>
-        </div>
-    </footer>
+            <div class="footer-copy">
+                <p>Desenvolvido por Mariana Morais © 2024.</p>
+            </div>
+        </footer>
+    </div>
 
+    <script src="./script-api.js"></script>
     <script src="../script.js"></script>
 </body>
 

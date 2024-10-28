@@ -16,10 +16,30 @@
 </head>
 
 <body>
-    <div class="pagina-titulo-bg">
-        <header class="header">
-            <nav>
-                <a href="../"><img src="../static/img/svg/logo.svg" alt="Loriz Arquitetura"></a>
+    <div id="servicos-content">
+        <div class="pagina-titulo-bg bg">
+            <header class="header">
+                <nav>
+                    <a href="../"><img src="../static/img/svg/logo.svg" alt="Loriz Arquitetura"></a>
+                    <ul>
+                        <li><a href="../">Início</a></li>
+                        <li><a href="../sobre/">Sobre</a></li>
+                        <li><a href="../servicos/">Serviços</a></li>
+                        <li><a href="../projetos/">Projetos</a></li>
+                        <li><a href="../clientes/">Clientes</a></li>
+                        <li><a href="../contato/">Contato</a></li>
+                    </ul>
+                    <div class="menu-mobile-icone">
+                        <button onclick="menuShow()">
+                            <img src="../static/img/svg/menu-icon.svg" alt="Menu Mobile">
+                        </button>
+                    </div>
+                </nav>
+                <script>
+                    window.BASE_URL = "../static/img/svg/";
+                </script>
+            </header>
+            <div class="menu-mobile">
                 <ul>
                     <li><a href="../">Início</a></li>
                     <li><a href="../sobre/">Sobre</a></li>
@@ -28,95 +48,78 @@
                     <li><a href="../clientes/">Clientes</a></li>
                     <li><a href="../contato/">Contato</a></li>
                 </ul>
-                <div class="menu-mobile-icone">
-                    <button onclick="menuShow()">
-                        <img src="../static/img/svg/menu-icon.svg" alt="Menu Mobile">
-                    </button>
-                </div>
-            </nav>
-            <script>
-                window.BASE_URL = "../static/img/svg/";
-            </script>
-        </header>
-        <div class="menu-mobile">
-            <ul>
-                <li><a href="../">Início</a></li>
-                <li><a href="../sobre/">Sobre</a></li>
-                <li><a href="../servicos/">Serviços</a></li>
-                <li><a href="../projetos/">Projetos</a></li>
-                <li><a href="../clientes/">Clientes</a></li>
-                <li><a href="../contato/">Contato</a></li>
-            </ul>
+            </div>
+            <article class="pagina-titulo transition-element">
+                <h1 class="text">Serviços</h1>
+            </article>
         </div>
-        <article class="pagina-titulo transition-element">
-            <h1>Serviços</h1>
+
+        <article class="servicos-grid">
+            <div class="servicos-grid-1 transition-element">
+                <h3 class="text">Residenciais</h3>
+                <p class="text">Criamos projetos que traduzem o estilo de vida dos moradores, priorizando conforto, estética e funcionalidade.</p>
+            </div>
+            <div class="servicos-grid-2 transition-element">
+                <img class="img" src="../static/img/servicos/imagem-1.jpg" alt="Casa moderna de cor marrom e cinza, com várias janelas de vidro">
+            </div>
+            <div class="servicos-grid-4 transition-element">
+                <h3 class="text">Arquitetura comercial</h3>
+                <p class="text">Criamos espaços eficientes, funcionais e que traduzem a identidade de cada empresa.</p>
+            </div>
+            <div class="servicos-grid-3 transition-element">
+                <img class="img" src="../static/img/servicos/imagem-2.jpg" alt="Vários prédios altos e cinzas vistos de baixo">
+            </div>
+            <div class="servicos-grid-5 transition-element">
+                <h3 class="text">Design de interiores</h3>
+                <p class="text">Transformamos interiores em ambientes elegantes e acolhedores.</p>
+            </div>
+            <div class="servicos-grid-6 transition-element">
+                <img class="img" src="../static/img/servicos/imagem-3.jpg" alt="Corredor de um escritório, com várias portas de vidro">
+            </div>
         </article>
-    </div>
 
-    <article class="servicos-grid">
-        <div class="servicos-grid-1 transition-element">
-            <h3>Residenciais</h3>
-            <p>Criamos projetos que traduzem o estilo de vida dos moradores, priorizando conforto, estética e funcionalidade.</p>
-        </div>
-        <div class="servicos-grid-2 transition-element">
-            <img src="../static/img/servicos/imagem-1.jpg" alt="Casa moderna de cor marrom e cinza, com várias janelas de vidro">
-        </div>
-        <div class="servicos-grid-4 transition-element">
-            <h3>Arquitetura comercial</h3>
-            <p>Criamos espaços eficientes, funcionais e que traduzem a identidade de cada empresa.</p>
-        </div>
-        <div class="servicos-grid-3 transition-element">
-            <img src="../static/img/servicos/imagem-2.jpg" alt="Vários prédios altos e cinzas vistos de baixo">
-        </div>
-        <div class="servicos-grid-5 transition-element">
-            <h3>Design de interiores</h3>
-            <p>Transformamos interiores em ambientes elegantes e acolhedores.</p>
-        </div>
-        <div class="servicos-grid-6 transition-element">
-            <img src="../static/img/servicos/imagem-3.jpg" alt="Corredor de um escritório, com várias portas de vidro">
-        </div>
-    </article>
-
-    <footer class="footer-bg">
-        <div class="footer">
-            <div class="footer-flex">
-                <img src="../static/img/svg/logo.svg" alt="Loriz Arquitetura">
-                <div class="footer-info">
-                    <div class="footer-info-item">
-                        <p>Ver mais</p>
-                        <ul>
-                            <li><a href="../">Início</a></li>
-                            <li><a href="../sobre/">Sobre</a></li>
-                            <li><a href="../servicos/">Serviços</a></li>
-                            <li><a href="../projetos/">Projetos</a></li>
-                            <li><a href="../contato/">Contato</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-info-item">
-                        <p>Acompanhe</p>
-                        <ul>
-                            <li><a href="">Instagram</a></li>
-                            <li><a href="">Facebook</a></li>
-                            <li><a href="">Whatsapp</a></li>
-                            <li><a href="">Linkedin</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-info-item">
-                        <p>Contato</p>
-                        <ul>
-                            <li>contato@loriz.com</li>
-                            <li>(31) 9 9999 9999</li>
-                            <li>Rua Fictícia, 39, Bairro Fictício, 00000-000</li>
-                        </ul>
+        <footer class="footer-bg">
+            <div class="footer">
+                <div class="footer-flex">
+                    <img src="../static/img/svg/logo.svg" alt="Loriz Arquitetura">
+                    <div class="footer-info">
+                        <div class="footer-info-item">
+                            <p>Ver mais</p>
+                            <ul>
+                                <li><a href="../">Início</a></li>
+                                <li><a href="../sobre/">Sobre</a></li>
+                                <li><a href="../servicos/">Serviços</a></li>
+                                <li><a href="../projetos/">Projetos</a></li>
+                                <li><a href="../contato/">Contato</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-info-item">
+                            <p>Acompanhe</p>
+                            <ul>
+                                <li><a href="">Instagram</a></li>
+                                <li><a href="">Facebook</a></li>
+                                <li><a href="">Whatsapp</a></li>
+                                <li><a href="">Linkedin</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-info-item">
+                            <p>Contato</p>
+                            <ul>
+                                <li>contato@loriz.com</li>
+                                <li>(31) 9 9999 9999</li>
+                                <li>Rua Fictícia, 39, Bairro Fictício, 00000-000</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-copy">
-            <p>Desenvolvido por Mariana Morais © 2024.</p>
-        </div>
-    </footer>
+            <div class="footer-copy">
+                <p>Desenvolvido por Mariana Morais © 2024.</p>
+            </div>
+        </footer>
+    </div>
 
+    <script src="./script-api.js"></script>
     <script src="../script.js"></script>
 </body>
 

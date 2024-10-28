@@ -96,3 +96,18 @@ img {
     opacity: 1;
   }
 }
+
+#pagina-inicial-content,
+#sobre-content,
+#servicos-content,
+#projetos-content,
+#contato-content,
+#clientes-content,
+#projeto-esp-content {
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.visible {
+  opacity: 1 !important;
+}

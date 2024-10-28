@@ -16,10 +16,30 @@
 </head>
 
 <body>
-    <div class="pagina-titulo-bg">
-        <header class="header">
-            <nav>
-                <a href="../"><img src="../static/img/svg/logo.svg" alt="Loriz Arquitetura"></a>
+    <div id="sobre-content">
+        <div class="pagina-titulo-bg bg">
+            <header class="header">
+                <nav>
+                    <a href="../"><img src="../static/img/svg/logo.svg" alt="Loriz Arquitetura"></a>
+                    <ul>
+                        <li><a href="../">Início</a></li>
+                        <li><a href="../sobre/">Sobre</a></li>
+                        <li><a href="../servicos/">Serviços</a></li>
+                        <li><a href="../projetos/">Projetos</a></li>
+                        <li><a href="../clientes/">Clientes</a></li>
+                        <li><a href="../contato/">Contato</a></li>
+                    </ul>
+                    <div class="menu-mobile-icone">
+                        <button onclick="menuShow()">
+                            <img src="../static/img/svg/menu-icon.svg" alt="Menu Mobile">
+                        </button>
+                    </div>
+                </nav>
+                <script>
+                    window.BASE_URL = "../static/img/svg/";
+                </script>
+            </header>
+            <div class="menu-mobile">
                 <ul>
                     <li><a href="../">Início</a></li>
                     <li><a href="../sobre/">Sobre</a></li>
@@ -28,92 +48,75 @@
                     <li><a href="../clientes/">Clientes</a></li>
                     <li><a href="../contato/">Contato</a></li>
                 </ul>
-                <div class="menu-mobile-icone">
-                    <button onclick="menuShow()">
-                        <img src="../static/img/svg/menu-icon.svg" alt="Menu Mobile">
-                    </button>
-                </div>
-            </nav>
-            <script>
-                window.BASE_URL = "../static/img/svg/";
-            </script>
-        </header>
-        <div class="menu-mobile">
-            <ul>
-                <li><a href="../">Início</a></li>
-                <li><a href="../sobre/">Sobre</a></li>
-                <li><a href="../servicos/">Serviços</a></li>
-                <li><a href="../projetos/">Projetos</a></li>
-                <li><a href="../clientes/">Clientes</a></li>
-                <li><a href="../contato/">Contato</a></li>
-            </ul>
+            </div>
+            <article class="pagina-titulo transition-element">
+                <h1 class="text">Sobre a Loriz</h1>
+            </article>
         </div>
-        <article class="pagina-titulo transition-element">
-            <h1>Sobre a Loriz</h1>
-        </article>
-    </div>
 
-    <section class="sobre-info transition-element">
-        <p>A Loriz é uma empresa de arquitetura moderna que acredita na união entre design arrojado e funcionalidade inteligente. Nossos projetos são cuidadosamente elaborados para refletir as necessidades e desejos de cada cliente, sempre com foco na inovação e sustentabilidade.</p>
-    </section>
+        <section class="sobre-info transition-element">
+            <p class="text">A Loriz é uma empresa de arquitetura moderna que acredita na união entre design arrojado e funcionalidade inteligente. Nossos projetos são cuidadosamente elaborados para refletir as necessidades e desejos de cada cliente, sempre com foco na inovação e sustentabilidade.</p>
+        </section>
 
-    <section class="sobre-grid">
-        <div class="sobre-grid-1 transition-element">
-            <p>Nossa missão é transformar e inspirar através dos nossos projetos.</p>
-            <p>- João Felipe, CTO</p>
-        </div>
-        <div class="sobre-grid-2 transition-element">
-            <img src="../static/img/sobre/imagem-1.jpg" alt="Equipe conersando e sorrindo em uma reunião do escritório">
-        </div>
-        <div class="sobre-grid-4 transition-element">
-            <p>A Loriz é um sonho que se tornou realidade.</p>
-            <p>- Sarah Queiroz, Fundadora</p>
-        </div>
-        <div class="sobre-grid-3 transition-element">
-            <img src="../static/img/sobre/imagem-2.jpg" alt="Fundadora da Loriz sorrindo enquanto olha para o lado">
-        </div>
-    </section>
+        <section class="sobre-grid">
+            <div class="sobre-grid-1 transition-element">
+                <p class="text">Nossa missão é transformar e inspirar através dos nossos projetos.</p>
+                <p class="text">- João Felipe, CTO</p>
+            </div>
+            <div class="sobre-grid-2 transition-element">
+                <img class="img" src="../static/img/sobre/imagem-1.jpg" alt="Equipe conersando e sorrindo em uma reunião do escritório">
+            </div>
+            <div class="sobre-grid-4 transition-element">
+                <p class="text">A Loriz é um sonho que se tornou realidade.</p>
+                <p class="text">- Sarah Queiroz, Fundadora</p>
+            </div>
+            <div class="sobre-grid-3 transition-element">
+                <img class="img" src="../static/img/sobre/imagem-2.jpg" alt="Fundadora da Loriz sorrindo enquanto olha para o lado">
+            </div>
+        </section>
 
-    <footer class="footer-bg">
-        <div class="footer">
-            <div class="footer-flex">
-                <img src="../static/img/svg/logo.svg" alt="Loriz Arquitetura">
-                <div class="footer-info">
-                    <div class="footer-info-item">
-                        <p>Ver mais</p>
-                        <ul>
-                            <li><a href="../">Início</a></li>
-                            <li><a href="../sobre/">Sobre</a></li>
-                            <li><a href="../servicos/">Serviços</a></li>
-                            <li><a href="../projetos/">Projetos</a></li>
-                            <li><a href="../contato/">Contato</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-info-item">
-                        <p>Acompanhe</p>
-                        <ul>
-                            <li><a href="">Instagram</a></li>
-                            <li><a href="">Facebook</a></li>
-                            <li><a href="">Whatsapp</a></li>
-                            <li><a href="">Linkedin</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-info-item">
-                        <p>Contato</p>
-                        <ul>
-                            <li>contato@loriz.com</li>
-                            <li>(31) 9 9999 9999</li>
-                            <li>Rua Fictícia, 39, Bairro Fictício, 00000-000</li>
-                        </ul>
+        <footer class="footer-bg">
+            <div class="footer">
+                <div class="footer-flex">
+                    <img src="../static/img/svg/logo.svg" alt="Loriz Arquitetura">
+                    <div class="footer-info">
+                        <div class="footer-info-item">
+                            <p>Ver mais</p>
+                            <ul>
+                                <li><a href="../">Início</a></li>
+                                <li><a href="../sobre/">Sobre</a></li>
+                                <li><a href="../servicos/">Serviços</a></li>
+                                <li><a href="../projetos/">Projetos</a></li>
+                                <li><a href="../contato/">Contato</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-info-item">
+                            <p>Acompanhe</p>
+                            <ul>
+                                <li><a href="">Instagram</a></li>
+                                <li><a href="">Facebook</a></li>
+                                <li><a href="">Whatsapp</a></li>
+                                <li><a href="">Linkedin</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-info-item">
+                            <p>Contato</p>
+                            <ul>
+                                <li>contato@loriz.com</li>
+                                <li>(31) 9 9999 9999</li>
+                                <li>Rua Fictícia, 39, Bairro Fictício, 00000-000</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-copy">
-            <p>Desenvolvido por Mariana Morais © 2024.</p>
-        </div>
-    </footer>
+            <div class="footer-copy">
+                <p>Desenvolvido por Mariana Morais © 2024.</p>
+            </div>
+        </footer>
+    </div>
 
+    <script src="./script-api.js"></script>
     <script src="../script.js"></script>
 </body>
 

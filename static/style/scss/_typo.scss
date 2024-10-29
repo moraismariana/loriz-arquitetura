@@ -65,6 +65,9 @@
     bottom: 0px;
     left: 0;
     transition: 0.3s;
+    #pagina-inicial-edit & {
+      display: none;
+    }
   }
   &:hover::after {
     width: 0%;

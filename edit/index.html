@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loriz Arquitetura</title>
+    <meta name="description" content="Bem-vindo à Loriz, uma empresa de arquitetura moderna especializada em criar projetos que equilibram estética, funcionalidade e inovação. Desenvolvemos soluções personalizadas para residências, espaços comerciais e design de interiores, sempre com foco em sustentabilidade e qualidade. Nosso objetivo é transformar ambientes em experiências únicas, traduzindo sonhos em espaços inspiradores. Explore nossos projetos e descubra como podemos materializar suas ideias.">
+
+    <link rel="stylesheet" href="../static/style/css/style.css">
+
+    <!-- tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+
+<body class="edit-page" id="pagina-inicial-edit">
+    <form>
+        <section class="edit-header">
+            <div>
+                <p>Você está no modo de edição.</p>
+                <button id="salvar" type="submit">Salvar página</button>
+            </div>
+        </section>
+        <div class="inicio-introducao-bg bg">
+            <input type="file" class="bg-input" accept="image/png, image/jpeg, image/webp" style="display: none;">
+            <header class="header">
+                <nav>
+                    <a href="../"><img src="../static/img/svg/logo.svg" alt="Loriz Arquitetura"></a>
+                    <ul>
+                        <li><a href="../">Início</a></li>
+                        <li><a href="../sobre/">Sobre</a></li>
+                        <li><a href="../servicos/">Serviços</a></li>
+                        <li><a href="../projetos/">Projetos</a></li>
+                        <li><a href="../clientes/">Clientes</a></li>
+                        <li><a href="../contato/">Contato</a></li>
+                    </ul>
+                    <div class="menu-mobile-icone">
+                        <button onclick="menuShow()">
+                            <img src="../static/img/svg/menu-icon.svg" alt="Menu Mobile">
+                        </button>
+                    </div>
+                </nav>
+                <script>
+                    window.BASE_URL = "../static/img/svg/";
+                </script>
+            </header>
+            <div class="menu-mobile">
+                <ul>
+                    <li><a href="../">Início</a></li>
+                    <li><a href="../sobre/">Sobre</a></li>
+                    <li><a href="../servicos/">Serviços</a></li>
+                    <li><a href="../projetos/">Projetos</a></li>
+                    <li><a href="../clientes/">Clientes</a></li>
+                    <li><a href="../contato/">Contato</a></li>
+                </ul>
+            </div>
+            <article class="inicio-introducao">
+                <h1 class="text"><textarea required class="text-input" id="text1" rows="1"></textarea></h1>
+                <p class="text"><textarea required class="text-input" id="text2" rows="3"></textarea></p>
+                <a class="text intern-link" href="../projetos/"><textarea required class="text-input" id="text3" rows="1"></textarea></a>
+            </article>
+        </div>
+
+        <article class="inicio-servicos">
+            <h2 class="text" class=""><textarea required class="text-input" id="text4" rows="1"></textarea></h2>
+            <div class="inicio-servicos-grid">
+                <div class="inicio-servicos-item">
+                    <div class="inicio-servicos-item-texto">
+                        <h3 class="text"><textarea required class="text-input" id="text5" rows="1"></textarea></h3>
+                        <p class="text"><textarea required class="text-input" id="text6" rows="2"></textarea></p>
+                    </div>
+                    <img class="img" src="../static/img/inicio/servicos-1.jpg" alt="Casa branca com arquitetura moderna minimalista" data-width="1000" data-height="1000">
+                    <input class="img-input" type="file" accept="image/png, image/jpeg, image/webp" style="display: none;">
+                </div>
+                <div class="inicio-servicos-item">
+                    <div class="inicio-servicos-item-texto">
+                        <h3 class="text"><textarea required class="text-input" id="text7" rows="1"></textarea></h3>
+                        <p class="text"><textarea required class="text-input" id="text8" rows="2"></textarea></p>
+                    </div>
+                    <img class="img" src="../static/img/inicio/servicos-2.jpg" alt="Prédio corporativo grande e espelhado" data-width="1000" data-height="1000">
+                    <input class="img-input" type="file" accept="image/png, image/jpeg, image/webp" style="display: none;">
+                </div>
+                <div class="inicio-servicos-item">
+                    <div class="inicio-servicos-item-texto">
+                        <h3 class="text"><textarea required class="text-input" id="text9" rows="1"></textarea></h3>
+                        <p class="text"><textarea required class="text-input" id="text10" rows="2"></textarea></p>
+                    </div>
+                    <img class="img" src="../static/img/inicio/servicos-3.jpg" alt="Interior de uma casa bem arquitetada, com uma sala grande, janelas, mesa e cadeiras ao centro e uma escada ao fundo." data-width="1000" data-height="1000">
+                    <input class="img-input" type="file" accept="image/png, image/jpeg, image/webp" style="display: none;">
+                </div>
+            </div>
+        </article>
+
+        <article class="inicio-depoimento">
+            <h2 class=text"><textarea required class="text-input" id="text11" rows="1"></textarea></h2>
+            <div class="inicio-depoimento-frase">
+                <p class="text"><textarea required class="text-input" id="text12" rows="2"></textarea></p>
+                <p class="text"><textarea required class="text-input" id="text13" rows="1"></textarea></p>
+            </div>
+            <a href="../clientes/" class="text intern-link"><textarea required class="text-input" id="text14" rows="1"></textarea></a>
+        </article>
+
+
+        <article class="inicio-projetos-bg bg">
+            <input type="file" class="bg-input" accept="image/png, image/jpeg, image/webp" style="display: none;">
+            <div class="inicio-projetos">
+                <h2 class="text"><textarea required class="text-input" id="text15" rows="1"></textarea></h2>
+                <p class="text"><textarea required class="text-input" id="text16" rows="3"></textarea></p>
+                <a class="text intern-link" href="../projetos/"><textarea required class="text-input" id="text17" rows="1"></textarea></a>
+            </div>
+        </article>
+
+        <article class="mapa">
+            <div class="mapa-before">
+                <p class="text"><textarea required class="text-input" id="text18" rows="1" cols="28"></textarea></p>
+                <p class="text"><textarea required class="text-input" id="text19" rows="1" cols="28"></textarea></p>
+            </div>
+            <div class="mapa-imagem">
+                <img src="../static/img/inicio/mapa.jpg" alt="Mapa da cidade">
+            </div>
+            <div class="mapa-after">
+                <img src="../static/img/svg/ampliar-mapa.svg" alt="Ampliar mapa">
+                <p>Ver mapa ampliado</p>
+            </div>
+        </article>
+
+        <footer class="footer-bg">
+            <div class="footer">
+                <div class="footer-flex">
+                    <img src="../static/img/svg/logo.svg" alt="Loriz Arquitetura">
+                    <div class="footer-info">
+                        <div class="footer-info-item">
+                            <p>Ver mais</p>
+                            <ul>
+                                <li><a href="../">Início</a></li>
+                                <li><a href="../sobre/">Sobre</a></li>
+                                <li><a href="../servicos/">Serviços</a></li>
+                                <li><a href="../projetos/">Projetos</a></li>
+                                <li><a href="../contato/">Contato</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-info-item">
+                            <p>Acompanhe</p>
+                            <ul>
+                                <li><a href="">Instagram</a></li>
+                                <li><a href="">Facebook</a></li>
+                                <li><a href="">Whatsapp</a></li>
+                                <li><a href="">Linkedin</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-info-item">
+                            <p>Contato</p>
+                            <ul>
+                                <li>contato@loriz.com</li>
+                                <li>(31) 9 9999 9999</li>
+                                <li>Rua Fictícia, 39, Bairro Fictício, 00000-000</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <p>Desenvolvido por Mariana Morais © 2024.</p>
+            </div>
+        </footer>
+    </form>
+
+    <script>
+        window.LOGIN_URL = "http://127.0.0.1:5500/login/";
+        window.ROOT_URL = "http://127.0.0.1:5500/";
+        window.TEXT_URL = "http://127.0.0.1:8000/paginainicialtexto/1/";
+        window.IMAGE_URL = "http://127.0.0.1:8000/paginainicialimagem/1/";
+        window.BG_URL = "http://127.0.0.1:8000/paginainicialbg/1/";
+    </script>
+    <script src="../script.js"></script>
+    <script src="./edit.js"></script>
+</body>

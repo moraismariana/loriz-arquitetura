@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const allValid = responses.every((res) => res.ok);
 
     if (!allValid) {
-      alert("Você não tem permissão para acessar todas as áreas.");
+      alert("Sessão expirada. Por favor, faça login novamente.");
       localStorage.removeItem("accessToken");
       window.location.href = window.LOGIN_URL;
       return;
